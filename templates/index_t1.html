@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Home Page</h1>
+        <p>{{content}}</p>
+        <p>{{r}}</p>
+        {% for x in range(10) %}
+            {% if x % 2 == 1%}
+                <p>Shivani {{x}}</p>
+            {% endif %}
+        {% endfor %}
+        {% for x in names %}
+                <p>name: {{x}}</p>
+                {% if x == "Chitransh" %}
+                    <p>111111111</p>
+                {% elif x == "Jain" %}    
+                    <p>22222222</p>
+                {% else %}
+                    <p>33333333</p>
+                {% endif %}
+        {% endfor %}
+    </body>
+</html>
